@@ -1,9 +1,15 @@
 // presentation/screens/home/home_screen.dart
 import 'package:flutter/material.dart';
+import 'package:kharchaplus/presentation/screens/dashboard/dashboard_screen.dart';
+import 'package:kharchaplus/presentation/screens/expense_list/expense_list_screen.dart';
+import 'package:kharchaplus/presentation/screens/settings/settings_screen.dart';
+import 'package:kharchaplus/presentation/screens/transit/transit_screen.dart';
+import '../../../domain/models/expense.dart';
 import '../../widgets/shared/app_card.dart';
 import '../../widgets/shared/app_button.dart';
 import '../../../data/repositories/expense_repository.dart';
 import '../../../core/constants/app_constants.dart';
+import '../add_expense/add_expense_screen.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -14,7 +20,7 @@ class HomeScreen extends StatefulWidget {
 
 class _HomeScreenState extends State<HomeScreen> {
   int _selectedIndex = 0;
-  final ExpenseRepository _repository = ExpenseRepository();
+  // final ExpenseRepository _repository = ExpenseRepository();
 
   final List<Widget> _screens = [
     const _HomeContent(),
