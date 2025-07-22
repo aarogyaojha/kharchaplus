@@ -12,7 +12,7 @@ import '../../../core/constants/app_constants.dart';
 import '../add_expense/add_expense_screen.dart';
 
 class HomeScreen extends StatefulWidget {
-  const HomeScreen({Key? key}) : super(key: key);
+  const HomeScreen({super.key});
 
   @override
   State<HomeScreen> createState() => _HomeScreenState();
@@ -62,7 +62,7 @@ class _HomeScreenState extends State<HomeScreen> {
 }
 
 class _HomeContent extends StatefulWidget {
-  const _HomeContent({Key? key}) : super(key: key);
+  const _HomeContent();
 
   @override
   State<_HomeContent> createState() => _HomeContentState();
@@ -201,11 +201,10 @@ class _QuickAddButton extends StatelessWidget {
   final VoidCallback onTap;
 
   const _QuickAddButton({
-    Key? key,
     required this.icon,
     required this.label,
     required this.onTap,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {

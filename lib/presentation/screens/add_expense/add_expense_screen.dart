@@ -12,11 +12,11 @@ class AddExpenseScreen extends StatefulWidget {
   final String? prefilledNotes;
 
   const AddExpenseScreen({
-    Key? key,
+    super.key,
     this.prefilledAmount,
     this.prefilledCategory,
     this.prefilledNotes,
-  }) : super(key: key);
+  });
 
   @override
   State<AddExpenseScreen> createState() => _AddExpenseScreenState();

@@ -148,8 +148,7 @@ class _CategoryItem extends StatelessWidget {
   final String category;
   final double amount;
 
-  const _CategoryItem({Key? key, required this.category, required this.amount})
-    : super(key: key);
+  const _CategoryItem({required this.category, required this.amount});
 
   @override
   Widget build(BuildContext context) {
