@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
-import '../../../../core/constants/app_constants.dart';
-import '../../../../data/repositories/expense_repository.dart';
-import '../../../../domain/models/expense.dart';
-import '../../../widgets/shared/app_card.dart';
+import '../../../core/constants/app_constants.dart';
+import '../../../data/repositories/expense_repository.dart';
+import '../../../domain/models/expense.dart';
+import '../../widgets/shared/app_card.dart';
 
 class ExpenseListScreen extends StatelessWidget {
   const ExpenseListScreen({super.key});
